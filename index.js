@@ -10,15 +10,17 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 function greet(timeString){
-  if(timeString=="8:40"){
+  if(timeString<"12pm"){
     return Good Morning;
   }
-else(timeString=="14:21"){
+else(timeString<"12pm" && timeString>"5pm"){
     return Good Afternoon;
   }
-if(timeString=="19:00"){
+if(timeString>"5pm"){
     return 'Good Evening';
   }
 
 }
+greet();
 /* Write your implementation of displayMessage() */
+ displayMessage();
